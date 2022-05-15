@@ -1,0 +1,40 @@
+.header {
+  border-bottom: 1px solid #ececec;
+  background: $white-color;
+}
+
+.header__inner {
+  display: flex;
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+}
+
+.header__menu {
+  margin-left: 93px;
+}
+
+.header__logo {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+
+  letter-spacing: 0.03em;
+
+  color: $accent-color;
+
+  text-decoration: none;
+  &--black {
+    color: $secondary-text-color;
+  }
+}
+
+.header__contact {
+  margin-left: 305px;
+}
