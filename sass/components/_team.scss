@@ -4,9 +4,17 @@
   padding-bottom: 94px;
 }
 .team__inner {
-  width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+  @media screen and (min-width: 1600px) {
+    width: 1600px;
+  }
 }
 .team__heading {
   font-size: 36px;
@@ -19,6 +27,15 @@
 .team__list {
   margin-top: 50px;
   display: flex;
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+  @media screen and (min-width: 1600px) {
+    width: 1600px;
+  }
 }
 
 .team__card {
