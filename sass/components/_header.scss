@@ -1,22 +1,44 @@
 .header {
+  position: relative;
   border-bottom: 1px solid #ececec;
   background: $white-color;
+  // & {
+  //   @media screen and (max-width: 480px) {
+  //     position: relative;
+  //   }
+  // }
 }
 
 .header__inner {
   display: flex;
-  width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
+  & {
+    @media screen and (max-width: $tablet) {
+      padding: 10px 15px;
+      display: block;
+    }
+  }
 }
 
 .header__nav {
-  display: flex;
-  align-items: center;
+  & {
+    @media screen and (max-width: $tablet) {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
 }
 
 .header__menu {
-  margin-left: 93px;
+  display: none;
+  & {
+    @media screen and (min-width: $tablet) {
+      margin-left: 93px;
+      display: inline-flex;
+    }
+  }
 }
 
 .header__logo {
@@ -37,4 +59,9 @@
 
 .header__contact {
   margin-left: 305px;
+  // & {
+  //   @media screen and (min-width: $mobile) {
+  //     display: none;
+  //   }
+  // }
 }

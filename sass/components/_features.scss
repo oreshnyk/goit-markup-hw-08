@@ -1,6 +1,11 @@
 .features {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding: 60px 15px;
+  & {
+    @media screen and (min-width: $desktop) {
+      padding-top: 94px;
+      padding-bottom: 94px;
+    }
+  }
 }
 
 .features__inner {
@@ -27,10 +32,19 @@
 }
 
 .features__card {
-  width: 270px;
-  margin-right: 30px;
+  width: 450px;
+  margin-bottom: 30px;
   &:last-child {
-    margin-right: 0px;
+    margin-bottom: 0px;
+  }
+  & {
+    @media screen and (min-width: $desktop) {
+      width: 270px;
+      margin-right: 30px;
+      &:last-child {
+        margin-right: 0px;
+      }
+    }
   }
 }
 
@@ -42,6 +56,7 @@
   text-transform: uppercase;
   color: $secondary-text-color;
   margin-bottom: 10px;
+  text-align: center;
 }
 
 .features__text {

@@ -21,6 +21,20 @@
                 <nav class="header__nav"> <!-- header__nav -->
                 <!-- Лого -->
                     <a href="/" class="header__logo">Web<span class="header__logo--black">Studio</span></a>
+
+                    <!-- Mobile menu -->
+                    
+                    <button class="menu__button is-open" type="button" data-menu-button>
+                        <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+                            <use class="menu__icon--open" href="./images/icons-defs.svg#icon-menu_40px"></use>
+                            <use class="menu__icon--close" href="./images/icons-defs.svg#icon-close_40px"></use>
+                        </svg>
+                    </button>
+                    <div class="backdrop is-hidden">
+                        <div class="menu__mobile">
+                        </div>
+                    </div>
+
                     <!-- Навигация на другие страницы -->
                     <ul class="header__menu menu"> <!-- menu -->
                         <li class="menu__item"><a href="./index.html" class="menu__link menu__link--current">Студия</a></li>
@@ -481,6 +495,7 @@
                 </div>
             </div>
             <!-- Modal script -->
+            <script src="./js/mobile-menu.js"></script>
             <script src="./js/modal.js"></script>
     </body>
     </html>
