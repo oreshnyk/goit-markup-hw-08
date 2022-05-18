@@ -1,5 +1,5 @@
 .header {
-  position: relative;
+  // position: relative;
   border-bottom: 1px solid #ececec;
   background: $white-color;
   // & {
@@ -22,6 +22,7 @@
 }
 
 .header__nav {
+  // position: relative;
   & {
     @media screen and (max-width: $tablet) {
       display: flex;
@@ -33,6 +34,16 @@
 
 .header__menu {
   display: none;
+
+  .menu__mobile.is-open & {
+    display: block;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    text-align: center;
+  }
+
   & {
     @media screen and (min-width: $tablet) {
       margin-left: 93px;

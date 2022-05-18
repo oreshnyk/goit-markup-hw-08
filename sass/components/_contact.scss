@@ -1,6 +1,14 @@
 .contact {
   display: none;
 
+  .menu__mobile.is-open & {
+    display: flex;
+    margin-left: 0px;
+    margin-top: 60%; // 302pxmobile
+    margin-bottom: 48px;
+    flex-direction: column;
+  }
+
   & {
     @media screen and (min-width: $tablet) {
       // стили для планшета
@@ -20,10 +28,20 @@
 }
 
 .contact__item {
-  margin-left: 30px;
-  &:first-child {
-    margin-left: 0px;
+  margin-left: 0px;
+  font-size: 34px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+
+  &:last-child {
+    font-size: 24px;
+    line-height: 1.16;
+    letter-spacing: 0.02em;
   }
+  // margin-left: 30px;
+  // &:first-child {
+  //   margin-left: 0px; // desktop
+  // }
 }
 
 .contact__link {
@@ -32,11 +50,20 @@
   padding: 32px 0;
 
   text-decoration: none;
-  color: $primary-text-color;
+  color: $primary-text-color; // desktop
 
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &--phone {
+    color: $accent-color;
+  }
+
+  .menu__mobile.is-open & {
+    padding: 16px 0;
+  }
+
   &:hover,
   :focus {
     color: $accent-color;
@@ -44,6 +71,7 @@
 }
 
 .contact__icon {
+  display: none; // потом должна появится иконка
   margin-right: 10px;
   color: $white-color;
   fill: $primary-text-color;

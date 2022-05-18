@@ -114,12 +114,17 @@
 
 .social__item {
   margin-right: 10px;
+  font-size: 18px;
+  line-height: 1.22;
+
+  letter-spacing: 0.02em;
 }
 
 .social__link {
   display: flex;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.1);
+  text-decoration: none;
 
   transition-property: background-color;
   transition-duration: 250ms;

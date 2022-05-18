@@ -1,0 +1,27 @@
+.mobile-menu__socials {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.mobile-menu__social-item {
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+
+  &:first-child {
+    padding-left: 0;
+  }
+  &:last-child {
+    border-right: none;
+  }
+}
+
+.mobile-menu__social-link {
+  padding: 0 10px;
+  font-size: 18px;
+  line-height: 1.22;
+
+  letter-spacing: 0.02em;
+
+  text-decoration: none;
+
+  color: #2196f3;
+}
