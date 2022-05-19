@@ -1,16 +1,32 @@
 .portfolio {
 }
 .portfolio__inner {
-  width: 1200px;
-  padding: 94px 15px;
-  margin: 0 auto;
+  padding: 50px 15px;
+  & {
+    @media screen and (min-width: $desktop) {
+      width: 1200px;
+      padding: 94px 15px;
+      margin: 0 auto;
+    }
+  }
 }
 .portfolio__heading {
 }
 .portfolio__filter {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+
+  & {
+    @media screen and (min-width: $desktop) {
+      margin-bottom: 50px;
+    }
+  }
 }
 
 .portfolio__gallery {
-  margin: -30px -30px 0 0;
+  gap: 30px;
+  & {
+    @media screen and (min-width: $desktop) {
+      margin: -30px -30px 0 0;
+    }
+  }
 }

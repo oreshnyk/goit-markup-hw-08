@@ -1,12 +1,23 @@
 .filter {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  & {
+    @media screen and (min-width: $desktop) {
+      flex-wrap: unset;
+      justify-content: center;
+    }
+  }
 }
 
 .filter__item {
-  margin-left: 8px;
-  &:first-child {
-    margin-left: 0px;
+  & {
+    @media screen and (min-width: $desktop) {
+      margin-left: 8px;
+      &:first-child {
+        margin-left: 0px;
+      }
+    }
   }
 }
 

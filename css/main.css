@@ -1043,6 +1043,9 @@ textarea {
   background: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
+  margin-bottom: 20px;
+  margin-right: 0;
+  text-align: center;
 }
 
 .footer__logo {
@@ -1060,42 +1063,50 @@ textarea {
 }
 
 .footer__inner {
+  padding: 0 15px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 @media screen and (min-width: 1600px) {
   .footer__inner {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: baseline;
-        -ms-flex-align: baseline;
-            align-items: baseline;
     padding: 0 15px;
     margin: 0 auto;
   }
 }
 
 .footer__wraper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-flex: 100%;
+      -ms-flex: 100%;
+          flex: 100%;
+  margin-bottom: 60px;
+}
+
+@media screen and (min-width: 1600px) {
+  .footer__wraper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .footer__address {
@@ -1148,17 +1159,11 @@ textarea {
 }
 
 .footer__social {
-  margin: 60px 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  margin-bottom: 60px;
+  -webkit-box-flex: 100%;
+      -ms-flex: 100%;
+          flex: 100%;
+  text-align: center;
 }
 
 @media screen and (min-width: 1600px) {
@@ -1183,13 +1188,11 @@ textarea {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 @media screen and (min-width: 1600px) {
@@ -1199,6 +1202,15 @@ textarea {
 }
 
 .footer__heading {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-flex: 100%;
+      -ms-flex: 100%;
+          flex: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -1210,26 +1222,28 @@ textarea {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-top: 20px;
 }
 
 .footer-form__input {
-  min-width: 358px;
+  -webkit-box-flex: 100%;
+      -ms-flex: 100%;
+          flex: 100%;
   padding: 15px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+  height: 50px;
   color: #ffffff;
   background: #2f303a;
+  letter-spacing: 0.03em;
+  line-height: 1.25;
 }
 
 @media screen and (min-width: 480px) {
@@ -1239,6 +1253,15 @@ textarea {
 }
 
 .footer-form__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: relative;
   margin-top: 20px;
   padding: 10px 62px 10px 29px;
@@ -1605,34 +1628,63 @@ textarea {
 }
 
 .portfolio__inner {
-  width: 1200px;
-  padding: 94px 15px;
-  margin: 0 auto;
+  padding: 50px 15px;
+}
+
+@media screen and (min-width: 1600px) {
+  .portfolio__inner {
+    width: 1200px;
+    padding: 94px 15px;
+    margin: 0 auto;
+  }
 }
 
 .portfolio__filter {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1600px) {
+  .portfolio__filter {
+    margin-bottom: 50px;
+  }
 }
 
 .portfolio__gallery {
-  margin: -30px -30px 0 0;
+  gap: 30px;
+}
+
+@media screen and (min-width: 1600px) {
+  .portfolio__gallery {
+    margin: -30px -30px 0 0;
+  }
 }
 
 .filter {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 8px;
 }
 
-.filter__item {
-  margin-left: 8px;
+@media screen and (min-width: 1600px) {
+  .filter {
+    -ms-flex-wrap: unset;
+        flex-wrap: unset;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
-.filter__item:first-child {
-  margin-left: 0px;
+@media screen and (min-width: 1600px) {
+  .filter__item {
+    margin-left: 8px;
+  }
+  .filter__item:first-child {
+    margin-left: 0px;
+  }
 }
 
 .filter__button {
@@ -1674,9 +1726,17 @@ textarea {
 }
 
 .gallery__card {
-  width: 370px;
-  margin-top: 30px;
-  margin-right: 30px;
+  -webkit-box-flex: 100%;
+      -ms-flex: 100%;
+          flex: 100%;
+}
+
+@media screen and (min-width: 1600px) {
+  .gallery__card {
+    width: 370px;
+    margin-top: 30px;
+    margin-right: 30px;
+  }
 }
 
 .gallery__link {
