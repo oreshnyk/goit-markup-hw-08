@@ -79,6 +79,11 @@ textarea {
     }
   }
   & {
+    @media screen and (min-width: $tablet) {
+      width: 100%;
+    }
+  }
+  & {
     @media screen and (min-width: $desktop) {
       width: 270px;
     }

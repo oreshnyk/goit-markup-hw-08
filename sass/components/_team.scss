@@ -3,8 +3,6 @@
   padding: 60px 0;
   & {
     @media screen and (min-width: $tablet) {
-      padding-top: 94px;
-      padding-bottom: 94px;
     }
     @media screen and (min-width: $desktop) {
       padding-top: 94px;
@@ -27,6 +25,13 @@
   text-align: center;
   letter-spacing: 0.03em;
   color: $secondary-text-color;
+
+  & {
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 30px;
+    }
+  }
+
   & {
     @media screen and (min-width: $desktop) {
       font-size: 36px;
@@ -38,10 +43,21 @@
 }
 
 .team__list {
-  margin-top: 30px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  & {
+    @media screen and (max-width: $tablet) {
+      margin-top: 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  & {
+    @media screen and (min-width: $tablet) {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+  }
   & {
     @media screen and (min-width: $desktop) {
       margin-top: 50px;
@@ -50,8 +66,14 @@
 }
 
 .team__card {
-  width: 450px;
+  flex: 100%;
   margin-bottom: 30px;
+  & {
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 0;
+      flex: calc(50% - 30px);
+    }
+  }
 
   &:last-child {
     margin-bottom: 0px;
@@ -66,6 +88,7 @@
       width: 100%;
     }
   }
+
   & {
     @media screen and (min-width: $desktop) {
       width: 270px;
