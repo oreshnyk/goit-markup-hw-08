@@ -8,6 +8,7 @@
 
   &:first-child {
     padding-left: 0;
+    margin-left: -10px;
   }
   &:last-child {
     border-right: none;
@@ -24,4 +25,16 @@
   text-decoration: none;
 
   color: #2196f3;
+}
+
+.menu__icon {
+  .menu__button &--close {
+    display: none;
+  }
+  .menu__button.is-open &--close {
+    display: block;
+  }
+  .menu__button.is-open &--open {
+    display: none;
+  }
 }
