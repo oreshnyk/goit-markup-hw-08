@@ -293,6 +293,7 @@ textarea {
 .menu__mobile {
   display: none;
   position: absolute;
+  z-index: 1;
   top: 0;
   left: 0;
   width: 100%;
@@ -310,6 +311,7 @@ textarea {
 }
 
 .menu__mobile.is-open {
+  position: fixed;
   display: block;
   padding: 48px 83px 48px 40px;
   -webkit-transform: translateX(0%);
