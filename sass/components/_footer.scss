@@ -48,6 +48,11 @@
   flex: 100%;
   margin-bottom: 60px;
   & {
+    @media screen and (min-width: $tablet) {
+      flex: 50%;
+    }
+  }
+  & {
     @media screen and (min-width: $desktop) {
       display: flex;
       flex-direction: column;
@@ -94,6 +99,11 @@
   flex: 100%;
   text-align: center;
   & {
+    @media screen and (min-width: $tablet) {
+      flex: 50%;
+    }
+  }
+  & {
     @media screen and (min-width: $desktop) {
       margin-left: 70px;
     }
@@ -138,6 +148,11 @@
   justify-content: center;
 
   margin-top: 20px;
+  & {
+    @media screen and (min-width: $tablet) {
+      max-width: 450px;
+    }
+  }
 }
 
 .footer-form__input {
