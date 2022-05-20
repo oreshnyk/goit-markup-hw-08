@@ -2123,6 +2123,10 @@ textarea {
 }
 
 .gallery__image {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
   height: 294px;
 }
 /*# sourceMappingURL=main.css.map */

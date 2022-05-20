@@ -113,6 +113,8 @@
 }
 
 .gallery__image {
+  object-fit: cover;
+  object-position: center;
   height: 294px;
 }
 .gallery__image--display-block {
