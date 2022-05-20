@@ -57,6 +57,16 @@ textarea {
   resize: none;
 }
 
+.body--scroll-hidden {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  overflow-y: hidden;
+}
+
+.body--scroll-hidden::-webkit-scrollbar {
+  display: none;
+}
+
 .hidden {
   position: absolute;
   width: 1px;
