@@ -90,7 +90,7 @@
 }
 
 .form__wraper {
-  margin-top: 12px;
+  margin-top: 30px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -99,24 +99,35 @@
 }
 
 .form__field {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 28px;
 }
 .form__textarea {
+  position: relative;
 }
 
 .form__label {
-  position: relative;
+  transform: translate(-42px, -30px);
+  position: absolute;
+  left: 42px;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
   margin-bottom: 4px;
   margin-top: 10px;
+  &--textarea {
+    top: 10px;
+  }
   &:first-child {
     margin-top: 0px;
   }
 }
 
 .form__input {
-  padding: 8px 9px 8px 40px;
+  width: 100%;
+  padding: 8px 9px 8px 42px;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
@@ -132,6 +143,9 @@
 
 .form__icon {
   position: absolute;
+  left: 12px;
+  top: 11px;
+
   width: 18px;
   height: 18px;
   fill: $secondary-text-color;
@@ -142,57 +156,11 @@
   .form__input:focus-within + & {
     fill: $accent-color;
   }
-
-  &--user {
-    top: 23%;
-    left: 15%;
-    // transform: translate(12px, -1050%); // mobile
-
-    & {
-      @media screen and (min-width: $mobile) {
-        top: 23.5%;
-        left: 12%;
-      }
-    }
-    & {
-      @media screen and (min-width: $desktop) {
-        transform: translate(12px, -1070%); // desktop
-      }
-    }
-  }
-  &--phone {
-    top: 33.75%;
-    left: 15%;
-    & {
-      @media screen and (min-width: $mobile) {
-        top: 34.75%;
-        left: 12%;
-      }
-    }
-    & {
-      @media screen and (min-width: $desktop) {
-        transform: translate(12px, -690%); // desktop
-      }
-    }
-  }
-  &--email {
-    top: 44.75%;
-    left: 15%;
-    & {
-      @media screen and (min-width: $mobile) {
-        top: 46%;
-        left: 12%;
-      }
-    }
-    & {
-      @media screen and (min-width: $desktop) {
-        transform: translate(12px, -315%); // desktop
-      }
-    }
-  }
 }
 
 .form__comment {
+  width: 100%;
+  display: block;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.16;
@@ -215,7 +183,7 @@
 .form-submit {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   margin-top: 20px;
 }
