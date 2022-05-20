@@ -1994,6 +1994,7 @@ textarea {
 .gallery__card-thumb {
   overflow: hidden;
   position: relative;
+  height: 294px;
 }
 
 .gallery__link:hover .gallery__card-thumb::before {
@@ -2034,8 +2035,15 @@ textarea {
 }
 
 .gallery__card-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
-  padding: 63px 24px;
+  height: 294px;
+  padding: 0 24px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -2049,6 +2057,18 @@ textarea {
   font-size: 18px;
   line-height: 1.55;
   opacity: 0;
+}
+
+@media screen and (min-width: 767px) {
+  .gallery__card-text {
+    padding: 49px 24px;
+  }
+}
+
+@media screen and (min-width: 1199px) {
+  .gallery__card-text {
+    padding: 63px 24px;
+  }
 }
 
 .gallery__link:hover .gallery__card-text {
@@ -2068,5 +2088,9 @@ textarea {
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
   padding: 20px 24px;
+}
+
+.gallery__image {
+  height: 294px;
 }
 /*# sourceMappingURL=main.css.map */

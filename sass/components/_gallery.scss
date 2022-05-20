@@ -39,6 +39,7 @@
 .gallery__card-thumb {
   overflow: hidden;
   position: relative;
+  height: 294px;
   .gallery__link:hover &::before {
     transform: translateY(0);
     opacity: 1;
@@ -68,8 +69,11 @@
   color: $secondary-text-color;
 }
 .gallery__card-text {
+  display: flex;
+  align-items: center;
   width: 100%;
-  padding: 63px 24px;
+  height: 294px;
+  padding: 0 24px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -79,6 +83,19 @@
   font-size: 18px;
   line-height: 1.55;
   opacity: 0;
+
+  & {
+    @media screen and (min-width: $tablet) {
+      padding: 49px 24px;
+    }
+  }
+
+  & {
+    @media screen and (min-width: $desktop) {
+      padding: 63px 24px;
+    }
+  }
+
   .gallery__link:hover & {
     transform: translate(-50%, -50%);
     opacity: 1;
@@ -93,6 +110,10 @@
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
   padding: 20px 24px;
+}
+
+.gallery__image {
+  height: 294px;
 }
 .gallery__image--display-block {
 }
