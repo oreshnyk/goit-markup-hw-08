@@ -4,7 +4,7 @@
   padding: 50px 15px;
   & {
     @media screen and (min-width: $desktop) {
-      width: 1200px;
+      max-width: 1200px;
       padding: 94px 15px;
       margin: 0 auto;
     }
@@ -14,6 +14,11 @@
 }
 .portfolio__filter {
   margin-bottom: 30px;
+  & {
+    @media screen and (min-width: $tablet) {
+      justify-content: center;
+    }
+  }
 
   & {
     @media screen and (min-width: $desktop) {
@@ -26,7 +31,7 @@
   gap: 30px;
   & {
     @media screen and (min-width: $desktop) {
-      margin: -30px -30px 0 0;
+      margin: 0 -30px 0 0;
     }
   }
 }

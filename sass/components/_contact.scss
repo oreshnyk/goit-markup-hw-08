@@ -9,6 +9,14 @@
       margin-left: auto;
     }
   }
+  & {
+    @media screen and (min-width: $desktop) {
+      display: flex;
+      flex-wrap: nowrap;
+      width: auto;
+      margin-left: auto;
+    }
+  }
 
   .menu__mobile.is-open & {
     display: flex;
@@ -42,7 +50,11 @@
   line-height: 1.16;
   letter-spacing: 0.02em;
 
-  // text-align: left;
+  & {
+    @media screen and (min-width: $desktop) {
+      margin-left: 30px;
+    }
+  }
 
   &:last-child {
     @media screen and (max-width: $tablet) {
@@ -80,6 +92,12 @@
   & {
     @media screen and (min-width: $tablet) {
       padding: 5px;
+    }
+  }
+
+  & {
+    @media screen and (min-width: $desktop) {
+      padding: 0;
     }
   }
 

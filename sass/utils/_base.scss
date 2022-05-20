@@ -70,22 +70,24 @@ textarea {
 }
 
 .image--display-block {
-  width: 450px;
+  width: 100%;
 
   display: block;
   & {
-    @media screen and (max-width: $mobile) {
-      width: 100%;
+    @media screen and (min-width: $mobile) {
+      // width: 100%;
     }
   }
   & {
     @media screen and (min-width: $tablet) {
-      width: 100%;
+      // width: 100%;
     }
   }
   & {
     @media screen and (min-width: $desktop) {
-      width: 270px;
+      // display: block;
+      // width: 100%;
+      height: auto;
     }
   }
 }

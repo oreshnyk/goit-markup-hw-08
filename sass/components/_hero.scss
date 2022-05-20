@@ -1,5 +1,5 @@
 .hero {
-  padding: 118px 60px;
+  padding: 118px 0;
   background-color: $footer-color;
   text-align: center;
 
@@ -23,6 +23,17 @@
 }
 
 .hero__inner {
+  max-width: 360px;
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: auto;
+  margin-right: auto;
+
+  & {
+    @media screen and (min-width: $desktop) {
+      max-width: 696px;
+    }
+  }
 }
 
 .hero__heading {

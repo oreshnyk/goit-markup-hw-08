@@ -1,10 +1,11 @@
 .client {
   flex-basis: calc(100% / 2);
-  & {
-    @media screen and (min-width: $tablet) {
-      margin: 60px 0;
-    }
-  }
+  padding: 60px 0;
+  // & {
+  //   @media screen and (min-width: $tablet) {
+  //     padding: 60px 0;
+  //   }
+  // }
   & {
     @media screen and (min-width: $desktop) {
       padding-top: 94px;
@@ -13,14 +14,9 @@
   }
 }
 .client__inner {
-  // flex-basis: calc(100% / 2);
+  margin: 0 auto;
   padding: 0 15px;
-  margin: 60px auto;
-  & {
-    @media screen and (min-width: $tablet) {
-      margin: 0;
-    }
-  }
+  max-width: 1200px;
 }
 
 .client__title {
@@ -29,33 +25,21 @@
   text-align: center;
   letter-spacing: 0.03em;
   color: $secondary-text-color;
-  & {
-    @media screen and (min-width: $tablet) {
-      margin-bottom: 30px;
-    }
-  }
+  margin-bottom: 30px;
+
   & {
     @media screen and (min-width: $desktop) {
       font-size: 36px;
       line-height: 1.16;
+      margin-bottom: 0;
     }
   }
 }
 .client__list {
   display: flex;
   flex-wrap: wrap;
-
-  & {
-    @media screen and (min-width: $mobile) {
-    }
-  }
-
-  & {
-    @media screen and (min-width: $tablet) {
-      justify-content: space-between;
-      gap: 30px;
-    }
-  }
+  gap: 30px;
+  justify-content: space-between;
 
   & {
     @media screen and (min-width: $desktop) {
@@ -65,14 +49,12 @@
 }
 .client__member {
   position: relative;
-  width: 46.75%;
+  flex: calc(50% - 30px);
   height: 92px;
-  margin: auto;
-  margin-top: 30px;
 
-  &:nth-child(even) {
-    margin-left: auto;
-  }
+  // &:nth-child(even) {
+  //   margin-left: auto;
+  // }
 
   & {
     @media screen and (min-width: $tablet) {
@@ -83,8 +65,7 @@
 
   & {
     @media screen and (min-width: $desktop) {
-      width: 170px;
-      height: 92px;
+      flex: calc(16.6666666667% - 150px);
     }
   }
 }
@@ -102,6 +83,12 @@
   transition-property: outline-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  & {
+    @media screen and (min-width: $desktop) {
+      max-width: 170px;
+    }
+  }
 
   .client__link:hover & {
     outline-color: $accent-color;
