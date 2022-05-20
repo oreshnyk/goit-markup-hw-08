@@ -1,4 +1,5 @@
 .hero {
+  max-width: 1600px;
   padding: 118px 0;
   background-color: $footer-color;
   text-align: center;
@@ -12,6 +13,25 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  // adaptive background
+  & {
+    @media (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+      background: url(../images/hero_background@1-5x.jpg);
+      background-size: cover;
+      background-position: center;
+      background-blend-mode: overlay;
+    }
+  }
+
+  & {
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+      background: url(../images/hero_background@2x.jpg);
+      background-size: cover;
+      background-position: center;
+      background-blend-mode: overlay;
+    }
+  }
+  // adaptive markup
   & {
     @media screen and (min-width: $desktop) {
       margin-left: auto;

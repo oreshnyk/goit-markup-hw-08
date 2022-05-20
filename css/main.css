@@ -89,13 +89,8 @@ textarea {
 
 .image--display-block {
   width: 100%;
+  height: auto;
   display: block;
-}
-
-@media screen and (min-width: 1199px) {
-  .image--display-block {
-    height: auto;
-  }
 }
 
 .header {
@@ -571,6 +566,7 @@ textarea {
 }
 
 .hero {
+  max-width: 1600px;
   padding: 118px 0;
   background-color: #2f303a;
   text-align: center;
@@ -579,6 +575,24 @@ textarea {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+@media (min-device-pixel-ratio: 1.5), (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+  .hero {
+    background: url(../images/hero_background@1-5x.jpg);
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: overlay;
+  }
+}
+
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .hero {
+    background: url(../images/hero_background@2x.jpg);
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: overlay;
+  }
 }
 
 @media screen and (min-width: 1199px) {

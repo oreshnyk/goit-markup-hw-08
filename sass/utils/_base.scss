@@ -80,23 +80,6 @@ textarea {
 
 .image--display-block {
   width: 100%;
-
+  height: auto;
   display: block;
-  & {
-    @media screen and (min-width: $mobile) {
-      // width: 100%;
-    }
-  }
-  & {
-    @media screen and (min-width: $tablet) {
-      // width: 100%;
-    }
-  }
-  & {
-    @media screen and (min-width: $desktop) {
-      // display: block;
-      // width: 100%;
-      height: auto;
-    }
-  }
 }
