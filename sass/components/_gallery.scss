@@ -5,6 +5,20 @@
 .gallery__card {
   flex: 100%;
 
+  &:last-child {
+    @media screen and (max-width) {
+      flex: 100%;
+    }
+    @media screen and (min-width: $tablet) {
+      flex: calc(50% - 15px);
+      flex-grow: 0;
+    }
+    @media screen and (min-width: $desktop) {
+      flex: calc(33% - 60px);
+      flex-grow: 1;
+    }
+  }
+
   & {
     @media screen and (min-width: $tablet) {
       flex: calc(50% - 30px);
