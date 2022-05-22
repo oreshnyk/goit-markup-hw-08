@@ -21,7 +21,6 @@
   .menu__mobile.is-open & {
     display: flex;
     margin-left: 0px;
-    margin-top: 60%; // 302pxmobile
     margin-bottom: 48px;
     flex-direction: column;
   }
@@ -81,6 +80,7 @@
   display: flex;
   align-items: center;
   padding: 32px 0;
+  font-weight: 500;
 
   text-decoration: none;
   color: $primary-text-color; // desktop
