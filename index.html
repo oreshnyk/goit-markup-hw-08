@@ -301,16 +301,14 @@
           <h2 class="team__heading">Наша команда</h2>
           <ul class="team__list">
             <li class="team__card">
-              <img
-                class="image--display-block"
-                src="images/imgpd.jpg"
-                srcset="
-                  images/imgpd.jpg, 
-                  images/imgpd@1-5x.jpg 1.5x,
-                  images/imgpd@2x.jpg 2x
-                  "
-                alt="Product Designer"
-              />
+              <picture>
+                <source srcset="./images/img_mob1.jpg 1x, ./images/img_mob1@2x.jpg 2x" media="(max-width: 767px)" />
+                <source srcset="./images/img_tablet1.jpg 1x, ./images/img_tablet1@2x.jpg 2x"
+                  media="(max-width: 1199px)" />
+                <source srcset="./images/img_laptop1.jpg 1x, ./images/img_laptop1@2x.jpg 2x"
+                  media="(min-width: 1200px)" />
+                <img src="./images/img_mob1.jpg" class="image--display-block" alt="Фото Игорь Демьяненко" />
+              </picture>
               <div class="card-footer">
                 <h3 class="team__member">Игорь Демьяненко</h3>
                 <p class="card-footer__text">Product Designer</p>
@@ -355,16 +353,12 @@
               </div>
             </li>
             <li class="team__card">
-              <img
-                class="image--display-block"
-                src="images/imgfd.jpg"
-                srcset="
-                  images/imgfd.jpg, 
-                  images/imgfd@1-5x.jpg 1.5x,
-                  images/imgfd@2x.jpg 2x
-                  "
-                alt="Frontend Developer"
-              />
+              <picture>
+                <source srcset="./images/img_mob2.jpg 1x, ./images/img_mob2@2x.jpg 2x" media="(max-width: 767px)" />
+                <source srcset="./images/img_tablet2.jpg 1x, ./images/img_tablet2@2x.jpg 2x" media="(max-width: 1199px)" />
+                <source srcset="./images/img_laptop2.jpg 1x, ./images/img_laptop2@2x.jpg 2x" media="(min-width: 1200px)" />
+                <img src="./images/img_mob2.jpg" class="image--display-block" alt="Фото Ольга Репина" />
+              </picture>
               <div class="card-footer">
                 <h3 class="team__member">Ольга Репина</h3>
                 <p class="card-footer__text">Frontend Developer</p>
@@ -409,16 +403,12 @@
               </div>
             </li>
             <li class="team__card">
-              <img
-                class="image--display-block"
-                src="images/imgmark.jpg"
-                srcset="
-                  images/imgmark.jpg, 
-                  images/imgmark@1-5x.jpg 1.5x,
-                  images/imgmark@2x.jpg 2x
-                  "
-                alt="Marketing"
-              />
+              <picture>
+                <source srcset="./images/img_mob3.jpg 1x, ./images/img_mob3@2x.jpg 2x" media="(max-width: 767px)" />
+                <source srcset="./images/img_tablet3.jpg 1x, ./images/img_tablet3@2x.jpg 2x" media="(max-width: 1199px)" />
+                <source srcset="./images/img_laptop3.jpg 1x, ./images/img_laptop3@2x.jpg 2x" media="(min-width: 1200px)" />
+                <img src="./images/img_mob1.jpg" class="image--display-block" alt="Фото Николай Тарасов" />
+              </picture>
               <div class="card-footer">
                 <h3 class="team__member marketing">Николай Тарасов</h3>
                 <p class="card-footer__text">Marketing</p>
@@ -463,16 +453,12 @@
               </div>
             </li>
             <li class="team__card">
-              <img
-                class="image--display-block"
-                src="images/imguid.jpg"
-                srcset="
-                  images/imguid.jpg, 
-                  images/imguid@1-5x.jpg 1.5x,
-                  images/imguid@2x.jpg 2x
-                  "
-                alt="UI Designer"
-              />
+              <picture>
+                <source srcset="./images/img_mob4.jpg 1x, ./images/img_mob4@2x.jpg 2x" media="(max-width: 767px)" />
+                <source srcset="./images/img_tablet4.jpg 1x, ./images/img_tablet4@2x.jpg 2x" media="(max-width: 1199px)" />
+                <source srcset="./images/img_laptop4.jpg 1x, ./images/img_laptop4@2x.jpg 2x" media="(min-width: 1200px)" />
+                <img src="./images/img_mob1.jpg" class="image--display-block" alt="Фото Михаил Ермаков" />
+              </picture>
               <div class="card-footer">
                 <h3 class="team__member designer">Михаил Ермаков</h3>
                 <p class="card-footer__text">UI Designer</p>
