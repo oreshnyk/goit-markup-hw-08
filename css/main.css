@@ -2146,6 +2146,12 @@ textarea {
   padding: 20px 24px;
 }
 
+@media screen and (min-width: 767px) and (max-width: 790px) {
+  .gallery__card-footer--fixed {
+    height: 143px;
+  }
+}
+
 .gallery__image {
   -o-object-fit: cover;
      object-fit: cover;

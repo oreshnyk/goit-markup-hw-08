@@ -1,11 +1,7 @@
 .client {
   flex-basis: calc(100% / 2);
   padding: 60px 0;
-  // & {
-  //   @media screen and (min-width: $tablet) {
-  //     padding: 60px 0;
-  //   }
-  // }
+
   & {
     @media screen and (min-width: $desktop) {
       padding-top: 94px;
@@ -51,10 +47,6 @@
   position: relative;
   flex: calc(50% - 30px);
   height: 92px;
-
-  // &:nth-child(even) {
-  //   margin-left: auto;
-  // }
 
   & {
     @media screen and (min-width: $tablet) {
